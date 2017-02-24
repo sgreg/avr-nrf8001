@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE AttributeServer>
+<Profile Version="1.3">
+    <SetupId>1</SetupId>
+    <Device>nRF8001_Dx</Device>
+    <Service Type="local" PrimaryService="true">
+        <Name>Example Service</Name>
+        <Uuid BaseUUID="42150000C6964C43AB7120B33874F581" BaseUUIDName="AVR nRF8001 example">a001</Uuid>
+        <Characteristic>
+            <Name>PWM duty cycle</Name>
+            <Uuid BaseUUID="42150000C6964C43AB7120B33874F581" BaseUUIDName="AVR nRF8001 example">c001</Uuid>
+            <DefaultValue>0</DefaultValue>
+            <UsePresentationFormat>0</UsePresentationFormat>
+            <MaxDataLength>1</MaxDataLength>
+            <AttributeLenType>1</AttributeLenType>
+            <ForceOpen>false</ForceOpen>
+            <ForceEncryption>false</ForceEncryption>
+            <Properties>
+                <WriteWithoutResponse>true</WriteWithoutResponse>
+                <Write>false</Write>
+                <Notify>false</Notify>
+                <Indicate>false</Indicate>
+                <Broadcast>false</Broadcast>
+            </Properties>
+            <SetPipe>false</SetPipe>
+            <AckIsAuto>false</AckIsAuto>
+            <PresentationFormatDescriptor Value="0000" Exponent="0" Format="4" NameSpace="01" Unit="0000"/>
+            <PeriodForReadingThisCharacteristic>0</PeriodForReadingThisCharacteristic>
+            <PeriodForProperties/>
+        </Characteristic>
+        <Characteristic>
+            <Name>Button state</Name>
+            <Uuid BaseUUID="42150000C6964C43AB7120B33874F581" BaseUUIDName="AVR nRF8001 example">c002</Uuid>
+            <DefaultValue></DefaultValue>
+            <UsePresentationFormat>0</UsePresentationFormat>
+            <MaxDataLength>1</MaxDataLength>
+            <AttributeLenType>1</AttributeLenType>
+            <ForceOpen>false</ForceOpen>
+            <ForceEncryption>false</ForceEncryption>
+            <Properties>
+                <WriteWithoutResponse>false</WriteWithoutResponse>
+                <Write>false</Write>
+                <Notify>true</Notify>
+                <Indicate>false</Indicate>
+                <Broadcast>false</Broadcast>
+            </Properties>
+            <SetPipe>false</SetPipe>
+            <AckIsAuto>false</AckIsAuto>
+            <PresentationFormatDescriptor Value="0000" Exponent="0" Format="1" NameSpace="01" Unit="0000"/>
+            <PeriodForReadingThisCharacteristic>0</PeriodForReadingThisCharacteristic>
+            <PeriodForProperties/>
+        </Characteristic>
+        <Characteristic>
+            <Name>Serial Number</Name>
+            <Uuid BaseUUID="42150000C6964C43AB7120B33874F581" BaseUUIDName="AVR nRF8001 example">cf00</Uuid>
+            <DefaultValue>b00bface</DefaultValue>
+            <UsePresentationFormat>0</UsePresentationFormat>
+            <MaxDataLength>4</MaxDataLength>
+            <AttributeLenType>1</AttributeLenType>
+            <ForceOpen>false</ForceOpen>
+            <ForceEncryption>false</ForceEncryption>
+            <Properties>
+                <WriteWithoutResponse>false</WriteWithoutResponse>
+                <Write>false</Write>
+                <Notify>false</Notify>
+                <Indicate>false</Indicate>
+                <Broadcast>false</Broadcast>
+            </Properties>
+            <SetPipe>false</SetPipe>
+            <AckIsAuto>false</AckIsAuto>
+            <PresentationFormatDescriptor Value="0000" Exponent="0" Format="1" NameSpace="01" Unit="0000"/>
+            <PeriodForReadingThisCharacteristic>0</PeriodForReadingThisCharacteristic>
+            <PeriodForProperties/>
+        </Characteristic>
+    </Service>
+    <Gapsettings>
+        <Name>AVR nRF8001</Name>
+        <DeviceNameWriteLength>0</DeviceNameWriteLength>
+        <LocalPipeOnDeviceName>false</LocalPipeOnDeviceName>
+        <DeviceNameShortLength>1</DeviceNameShortLength>
+        <Apperance>0000</Apperance>
+        <SecurityLevel>0</SecurityLevel>
+        <AuthenticationReq>0</AuthenticationReq>
+        <IoCapabilities>0</IoCapabilities>
+        <BondTimeout>600</BondTimeout>
+        <SecurityRequestDelay>10</SecurityRequestDelay>
+        <MinimumKeySize>7</MinimumKeySize>
+        <MaximumKeySize>16</MaximumKeySize>
+        <AdvertisingDataBondedBitmap>0</AdvertisingDataBondedBitmap>
+        <AdvertisingDataGeneralBitmap>5a</AdvertisingDataGeneralBitmap>
+        <AdvertisingDataBrodcastBitmap>0</AdvertisingDataBrodcastBitmap>
+        <AdvertisingDataBondedScanResponseBitmap>0</AdvertisingDataBondedScanResponseBitmap>
+        <AdvertisingDataGeneralScanResponseBitmap>1a</AdvertisingDataGeneralScanResponseBitmap>
+        <AdvertisingDataBrodcastScanResponseBitmap>0</AdvertisingDataBrodcastScanResponseBitmap>
+        <AdvertisingDataBondedBitmapCustom>0</AdvertisingDataBondedBitmapCustom>
+        <AdvertisingDataGeneralBitmapCustom>0</AdvertisingDataGeneralBitmapCustom>
+        <AdvertisingDataBrodcastBitmapCustom>0</AdvertisingDataBrodcastBitmapCustom>
+        <AdvertisingDataBondedScanResponseBitmapCustom>0</AdvertisingDataBondedScanResponseBitmapCustom>
+        <AdvertisingDataGeneralScanResponseBitmapCustom>0</AdvertisingDataGeneralScanResponseBitmapCustom>
+        <AdvertisingDataBrodcastScanResponseBitmapCustom>0</AdvertisingDataBrodcastScanResponseBitmapCustom>
+        <TxPowerLevelOffset>0</TxPowerLevelOffset>
+        <MinimumConnectionInterval>6</MinimumConnectionInterval>
+        <MaximumConnectionInterval>6</MaximumConnectionInterval>
+        <SlaveLatency>0</SlaveLatency>
+        <TimeoutMultipler>65535</TimeoutMultipler>
+        <AddServiceUpdateCharacteristic>false</AddServiceUpdateCharacteristic>
+        <AddServiceUpdateCharacteristicPipe>false</AddServiceUpdateCharacteristicPipe>
+        <TimingChangeDelay>5</TimingChangeDelay>
+        <CustomAdTypes/>
+    </Gapsettings>
+    <Hardwaresettings>
+        <Clocksource>1</Clocksource>
+        <ClockAccuracy>1</ClockAccuracy>
+        <InitialTxPower>3</InitialTxPower>
+        <HfClkSource>0</HfClkSource>
+        <DcDcConverter>0</DcDcConverter>
+        <ActiveSignalModeIndex>0</ActiveSignalModeIndex>
+        <ActiveSignalToTickDistance>0</ActiveSignalToTickDistance>
+        <DynamicWindowLimitingEnabled>false</DynamicWindowLimitingEnabled>
+    </Hardwaresettings>
+    <CurrentInput>
+        <BatteryCharge>220</BatteryCharge>
+        <Master32KhzClockAccuracy>10</Master32KhzClockAccuracy>
+        <ConnectionInterval>1000</ConnectionInterval>
+        <PercentOfTimeSleeping>0</PercentOfTimeSleeping>
+        <PercentOfTimeAdvertising>0</PercentOfTimeAdvertising>
+        <AdvertisingInterval>1280</AdvertisingInterval>
+    </CurrentInput>
+</Profile>
